@@ -1,0 +1,26 @@
+[editor]
+scrolloff = 100
+cursorline = true
+bufferline = "always"
+auto-pairs = false
+
+[editor.statusline]
+mode.select = "VIS"
+center = ["primary-selection-length", "spacer", "position-percentage", "spacer", "total-line-numbers"]
+
+[editor.cursor-shape]
+select = "bar"
+insert = "underline"
+
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = true
+
+[keys.normal]
+"ret" = "insert_mode"
+"backspace" = "insert_mode"
+
+[keys.insert]
+q = { q = "normal_mode" }
+"§" = "normal_mode"
+
