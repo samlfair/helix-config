@@ -19,8 +19,11 @@ after-delay.enable = true
 [keys.normal]
 "ret" = "insert_mode"
 "backspace" = "insert_mode"
+C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before", "collapse_selection", "goto_line_start"]
+C-j = ["extend_to_line_bounds", "delete_selection", "paste_after", "collapse_selection", "goto_line_start"]
 
 [keys.insert]
 q = { q = "normal_mode" }
 "§" = "normal_mode"
-
+C-j = ["extend_to_line_bounds", "delete_selection", "paste_after", "collapse_selection", "goto_line_start"]
+C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before", "collapse_selection", "goto_line_start"]
