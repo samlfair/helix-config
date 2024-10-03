@@ -9,8 +9,8 @@ mode.select = "VIS"
 center = ["primary-selection-length", "spacer", "position-percentage", "spacer", "total-line-numbers"]
 
 [editor.cursor-shape]
-select = "bar"
-insert = "underline"
+select = "block"
+insert = "bar"
 
 [editor.auto-save]
 focus-lost = true
@@ -21,9 +21,10 @@ after-delay.enable = true
 "backspace" = "insert_mode"
 C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before", "collapse_selection", "goto_line_start"]
 C-j = ["extend_to_line_bounds", "delete_selection", "paste_after", "collapse_selection", "goto_line_start"]
+a = ["move_char_right", "insert_mode"]
 
 [keys.insert]
-q = { q = "normal_mode" }
+q = { q = "normal_mode", o = "open_below", v = "select_mode" }
 "§" = "normal_mode"
 C-j = ["extend_to_line_bounds", "delete_selection", "paste_after", "collapse_selection", "goto_line_start"]
 C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before", "collapse_selection", "goto_line_start"]
