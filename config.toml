@@ -1,3 +1,5 @@
+theme = "rose_pine"
+
 [editor]
 scrolloff = 100
 cursorline = true
