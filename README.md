@@ -1,3 +1,9 @@
+This is my config for Helix editor.
+
+---
+
+To get started, you need to install servers for various languages.
+
 Run the following commands to add language support:
 ```
 npm i -g @astrojs/language-server
