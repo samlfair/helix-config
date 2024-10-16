@@ -1,32 +1,51 @@
 theme = "rose_pine"
 
 [editor]
-scrolloff = 100
-cursorline = true
-bufferline = "always"
-auto-pairs = false
+scrolloff = 100 
+  # center cursor vertically
+cursorline = true 
+  # highlight current line
+bufferline = "always" 
+  # show open buffers at top of window
 
 [editor.statusline]
-mode.select = "VIS"
+mode.select = "VIS" 
+  # display text "VIS" in select mode (from vim)
 center = ["primary-selection-length", "spacer", "position-percentage", "spacer", "total-line-numbers"]
+  # customize bottom ribbon
 
-[editor.cursor-shape]
-select = "block"
+[editor.cursor-shape] 
+  # customize cursors in different modes
+normal = "block"
+select = "underline"
 insert = "bar"
 
 [editor.auto-save]
-focus-lost = true
-after-delay.enable = true
+focus-lost = true 
+  # save on window change
+after-delay.enable = true 
+  # save after 3000ms
 
 [keys.normal]
+  # hotkeys in normal mode
 "ret" = "insert_mode"
+  # 'return' key enters insert mode
 "backspace" = "insert_mode"
+  # 'backspace' key enters insert mode
 C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before", "collapse_selection", "goto_line_start"]
+  # move current line up one line
 C-j = ["extend_to_line_bounds", "delete_selection", "paste_after", "collapse_selection", "goto_line_start"]
+  # move current line down one line
 a = ["move_char_right", "insert_mode"]
+  # insert after (override default, which inserts after + selects)
 
 [keys.insert]
+  # hotkeys in insert mode
 q = { q = "normal_mode", o = "open_below", v = "select_mode" }
-"§" = "normal_mode"
-C-j = ["extend_to_line_bounds", "delete_selection", "paste_after", "collapse_selection", "goto_line_start"]
+  # 'qq' -> return to normal mode
+  # 'qo' -> start line below
+  # 'qv' -> switch to select mode
 C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before", "collapse_selection", "goto_line_start"]
+  # move current line up one line
+C-j = ["extend_to_line_bounds", "delete_selection", "paste_after", "collapse_selection", "goto_line_start"]
+  # move current line down one line

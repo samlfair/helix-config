@@ -1,13 +1,17 @@
 [language-server.emmet-lsp]
-command = "emment-language-server"
+  # this doesn't seem to work
+command = "emment-ls"
 args = ["--stdio"]
 
 [[language]]
 name = "markdown"
 soft-wrap = { enable = true, wrap-indicator = "", wrap-at-text-width = true }
+  # soft-wrap markdown
 text-width = 70
+  # wrap at 70 characters
 
 [[language]]
 name = "html"
 roots = [".git"]
 language-servers = ["vscode-html-language-server", "emmet-lsp"]
+  # this also doesn't seem to work
