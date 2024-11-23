@@ -1,4 +1,4 @@
-theme = "rose_pine"
+theme = "rose_pine_loud"
 
 [editor]
 scrolloff = 100 
@@ -7,6 +7,8 @@ cursorline = true
   # highlight current line
 bufferline = "always" 
   # show open buffers at top of window
+insert-final-newline = false
+  # don't insert an empty line on save
 
 [editor.statusline]
 mode.select = "VIS" 
@@ -38,6 +40,10 @@ C-j = ["extend_to_line_bounds", "delete_selection", "paste_after", "collapse_sel
   # move current line down one line
 a = ["move_char_right", "insert_mode"]
   # insert after (override default, which inserts after + selects)
+K = "move_line_up"
+  # move textual (instead of visual) line
+J = "move_line_down"
+  # move textual (instead of visual) line
 
 [keys.insert]
   # hotkeys in insert mode

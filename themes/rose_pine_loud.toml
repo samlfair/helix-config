@@ -1,0 +1,5 @@
+inherits = "rose_pine"
+
+"markup.heading.2" = { fg = "white", modifiers = ["bold"] }
+"markup.heading.marker" = { fg = "white", modifiers = ["bold"] }
+"markup.quote" = { fg = "subtle", modifiers = ["italic"] }
