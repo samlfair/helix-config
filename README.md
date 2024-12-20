@@ -29,6 +29,14 @@ npm i -g prettier
 npm i -g yaml-language-server@next
 ```
 
+Or
+
+```
+npm i -g @astrojs/language-server bash-language-server vscode-langservers-extracted svelte-language-server typescript-svelte-plugin @tailwindcss/language-server typescript typescript-language-server @vue/language-server prettier yaml-language-server@next
+
+brew install marksman
+```
+
 Note that tailwind requires additional configuration.
 
 Note that there are additional configurations available for Markdown.
